@@ -23,16 +23,16 @@ export default function BookEdit() {
 
   const navigate = useNavigate();
 
-  const handleSave = (event) => {
+  const handleUpdate = (event) => {
     event.preventDefault();
-    const newBook = {
+    const newMember = {
       id: id,
       email: email,
     };
-    axios.put(`${BASE_URI}/${id}`, newBook)
+    axios.put(`${BASE_URI}/${id}/`, newMember)
     .then((response) => {
       console.log("member edited successfully.");
-      navigate("/list");
+      navigate(BASE_URI);
     })
     .catch((error) => {
       console.log("Error while editing member:", error);
@@ -41,23 +41,23 @@ export default function BookEdit() {
 
   return (
       <div className="container">
-        <h2 className="text-center mt-5 mb-3">member 수정</h2>
+        <h2 className="text-center mt-5 mb-3">member 상세</h2>
         <div className="card">
           <div className="card-header">
             <Link className="btn btn-outline-primary mx-1" to="/">Home</Link>
-            <Link className="btn btn-outline-primary mx-1" to="/list">member 목록</Link>
+            <Link className="btn btn-outline-primary mx-1" to="/members">member 목록</Link>
           </div>
           <div className="card-body">
             <form>
               <div className="form-group">
                 <label htmlFor="id">ID</label>
                 <input
-                    onChange={(event) => {setId(event.target.value)}}
                     value={id}
                     type="text"
                     className="form-control"
                     id="id"
                     name="id"
+                    readOnly={true}
                     required>
                 </input>
               </div>
@@ -73,8 +73,8 @@ export default function BookEdit() {
                     required>
                 </input>
               </div>
-              <button onClick={handleSave} type="button" className="btn btn-outline-primary mt-3">
-                저장
+              <button onClick={handleUpdate} type="button" className="btn btn-outline-primary mt-3">
+                수정
               </button>
             </form>
           </div>

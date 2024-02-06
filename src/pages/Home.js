@@ -9,7 +9,7 @@ export default function Home() {
             <h2 className="text-center mt-5 mb-3">Home</h2>
           </div>
           <div className="card-body">
-            <p><Link to={`/list`} className="btn btn-outline-success">회원 목록 보기</Link></p>
+            <p><Link to={`/members`} className="btn btn-outline-success">회원 목록 보기</Link></p>
             <p><Link to={`/add`} className="btn btn-outline-success">회원 등록하기</Link></p>
           </div>
         </div>

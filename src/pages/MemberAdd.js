@@ -14,10 +14,10 @@ export default function MemberAdd() {
     const newMember = {
       email: email,
     };
-    axios.post(`${BASE_URI}`, newMember)
+    axios.post(`${BASE_URI}/`, newMember)
     .then((response) => {
       console.log("Member added successfully.");
-      navigate("/list");
+      navigate("/members");
     })
     .catch((error) => {
       console.log("Error while adding Member:", error);
@@ -30,7 +30,7 @@ export default function MemberAdd() {
         <div className="card">
           <div className="card-header">
             <Link className="btn btn-outline-primary mx-1" to="/">Home</Link>
-            <Link className="btn btn-outline-primary mx-1" to="/list">Member 목록</Link>
+            <Link className="btn btn-outline-primary mx-1" to="/members">Member 목록</Link>
           </div>
           <div className="card-body">
             <form>

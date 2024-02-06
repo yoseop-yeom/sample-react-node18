@@ -60,8 +60,7 @@ export default function MemberList() {
                       <td>{member.id}</td>
                       <td>{member.email}</td>
                       <td>
-                        <Link to={`/view/${member.id}`} className="btn btn-outline-info mx-1">조회</Link>
-                        <Link to={`/edit/${member.id}`} className="btn btn-outline-success mx-1">수정</Link>
+                        <Link to={`${BASE_URI}/${member.id}`} className="btn btn-outline-info mx-1">상세</Link>
                         <button onClick={()=>handleDeleteConfirm(member.id)} className="btn btn-outline-danger mx-1">삭제</button>
                       </td>
                     </tr>
