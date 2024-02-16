@@ -3,7 +3,8 @@
 
 ## 1. 서버 실행 절차
 ### 1. api 서버 주소 변경
-[src/index.js](src/index.js) 파일 10번째 줄 서버 주소 변경 
+[src/index.js](src/index.js) 파일 10번째 줄 서버 주소 변경
+![axios 주소 변경 가이드](https://github.com/idean3885/sample-react/assets/43669379/7557de69-392e-4cb2-a0b4-696db3945770)
 
 ### 2. 서버 실행
 1. 패키지 인스톨
