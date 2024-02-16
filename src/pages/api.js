@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URI = '/members'
+const BASE_URI = '/members/v1'
 
 export const deleteMember = async (id) => {
   try {

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
-const BASE_URI = '/members'
+const BASE_URI = '/members/v1'
 
 export default function MemberAdd() {
   const [email, setEmail] = useState('');

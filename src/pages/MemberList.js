@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { deleteMember } from './api';  // delete 공통 함수 : api.js
 
-const BASE_URI = '/members'
+const BASE_URI = '/members/v1'
 
 export default function MemberList() {
   const  [memberList, setMemberList] = useState([]);
