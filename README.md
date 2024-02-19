@@ -1,10 +1,11 @@
 # Sample React Node18
-> API 서버와 통신하는 샘플 프로젝트입니다.
+> API 서버와 통신하는 샘플 프로젝트입니다.  
+> Port: 3000
 
 ## 1. 서버 실행 절차
 ### 1. api 서버 주소 변경
 [src/index.js](src/index.js) 파일 10번째 줄 서버 주소 변경
-![axios 주소 변경 가이드](https://github.com/idean3885/sample-react/assets/43669379/7557de69-392e-4cb2-a0b4-696db3945770)
+![Api Domain 변경 가이드](https://github.com/idean3885/sample-react-node18/assets/43669379/6f49e84e-0690-4940-a82b-0a4a476ea402)
 
 ### 2. 서버 실행
 1. 패키지 인스톨
