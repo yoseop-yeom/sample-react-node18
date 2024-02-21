@@ -32,7 +32,7 @@ export default function BookEdit() {
     axios.put(`${BASE_URI}/${id}/`, newMember)
     .then((response) => {
       console.log("member edited successfully.");
-      navigate(BASE_URI);
+      navigate('/members');
     })
     .catch((error) => {
       console.log("Error while editing member:", error);
